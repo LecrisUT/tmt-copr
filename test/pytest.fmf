@@ -1,0 +1,8 @@
+/:
+  inherit: false
+
+tag: [ pytest ]
+require:
+  - python3-pytest
+path: ./
+test: python3 -m pytest
