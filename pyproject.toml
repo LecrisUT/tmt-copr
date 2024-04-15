@@ -55,6 +55,10 @@ docs = [
     "sphinx-prompt",
 ]
 
+[project.entry-points."tmt.plugin"]
+DiscoverCopr = "tmt_copr.discover:DiscoverCopr"
+FrameworkCopr = "tmt_copr.framework:Copr"
+
 [project.urls]
 Homepage = "https://github.com/LecrisUT/tmt-copr"
 Repository = "https://github.com/LecrisUT/tmt-copr"

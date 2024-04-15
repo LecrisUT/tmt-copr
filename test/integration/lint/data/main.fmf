@@ -1,0 +1,9 @@
+# Minimal examples
+/good:
+  summary: "Minimal example "
+  /discover:
+    summary+: (discover)
+    discover:
+      how: copr
+    execute:
+      how: tmt
