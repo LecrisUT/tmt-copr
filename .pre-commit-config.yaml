@@ -2,7 +2,7 @@ exclude: ^LICENSE.md$
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v5.0.0
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
@@ -15,14 +15,14 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.3.2
+    rev: v0.7.1
     hooks:
       - id: ruff
         args: ["--fix", "--show-fixes"]
       - id: ruff-format
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.9.0
+    rev: v1.13.0
     hooks:
       - id: mypy
         files: ^(src|test)
@@ -31,7 +31,7 @@ repos:
           - copr
 
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
+    rev: 0.7.18
     hooks:
       - id: mdformat
         additional_dependencies:
@@ -41,7 +41,7 @@ repos:
   - repo: https://github.com/executablebooks/mdformat
     # https://github.com/executablebooks/mdformat/issues/234
     # TODO: Disabled due to lack of colon-fence support
-    rev: 0.7.17
+    rev: 0.7.18
     hooks:
       - id: mdformat
         stages: [ manual ]
